@@ -1,4 +1,29 @@
 <script>
+let visible = false;
+
+    setTimeout(() => visible = true, 500);
+
+	function typewriter(node, { speed = 50 }) {
+		const valid = (
+			node.childNodes.length === 1 &&
+			node.childNodes[0].nodeType === Node.TEXT_NODE
+		);
+
+		if (!valid) {
+			throw new Error(`This transition only works on elements with a single text node child`);
+		}
+
+		const text = node.textContent;
+		const duration = text.length * speed;
+
+		return {
+			duration,
+			tick: t => {
+				const i = ~~(text.length * t);
+				node.textContent = text.slice(0, i);
+			}
+		};
+	}
 </script>
 
 <div class="row align-items-center">
@@ -7,11 +32,14 @@
     </div>
     <div class="col-sm-12 col-lg-7 mt_md--40 mt_sm--40">
         <div class="inner">
-            <span class="heading">Welcome to my World</span>
-            <h1 class="title">Hi, I’m Aus Gomez <br>
-                <span> Software Developer.</span>
+        
+        <span class="heading">Welcome to my World</span>
+            {#if visible}
+            <h1 class="title"><span in:typewriter>Hi, I’m Aus Gomez</span><br>
+                <span class="second" in:typewriter> Software Developer.</span> 
             </h1>
-            <h2>based in USA.</h2>
+            <h2  in:typewriter>based in USA.</h2>
+            {/if}
         </div>
     </div>
 </div>
@@ -49,7 +77,7 @@
         line-height: 75px;
     }
 
-    h1.title span {
+    span.second {
         color: #1FA4B6;
     }
 
