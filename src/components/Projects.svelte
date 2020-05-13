@@ -6,7 +6,7 @@ let projects =
 
     { id: 'Habanero-App', title: 'Habanero App', desc: 'This is an open-source Flutter app that I developed to suggest food recipes based on the ingredients that the user already have', latest: true, category: 'mobile', tags: ['flutter', 'Android', 'ios', 'firebase'], source: 'https://github.com/Anstroy/recipe_app_flutter', live: ''},
 
-    { id: 'Svelte-Portfolio', title: 'Svelte Portfolio', desc: 'A portolio template made with Svelte, this website exact website is the project', latest: true, category: 'web', tags: ['svelte', 'bootstrap'], source: '', live: ''},
+    { id: 'Svelte-Portfolio', title: 'Svelte Portfolio', desc: 'A portolio template made with Svelte, this website exact website is the project', latest: true, category: 'web', tags: ['svelte', 'bootstrap'], source: 'https://github.com/Anstroy/svelte_portfolio', live: 'https://anstroy.github.io'},
 
     { id: 'Ketogram', title: 'Ketogram', desc: 'Simply send a photo of your favorite food to this phone number (956) 403-6287 and you will receive information about that food being keto friendly or not.', latest: false, category: 'mobile', tags: ['python', 'flask', 'twilio'], source: 'https://github.com/Anstroy/ketogram', live: ''},
 
@@ -41,6 +41,10 @@ function setFilter(cat) {
         <button class:active="{current === 0}" on:click={() => {setFilter('all'); current = 0}} type="button" class="btn btn-lg btn-info">All Projects</button>
         <button class:active="{current === 1}" on:click={() => {setFilter('web'); current = 1}} type="button" class="btn btn-lg btn-info">Web Dev</button>
         <button class:active="{current === 2}" on:click={() => {setFilter('mobile'); current = 2}} type="button" class="btn btn-lg btn-info">Mobile Apps</button>
+    </div>
+    <br>
+    <div class="btn-group resume" role="group" aria-label="Third group">
+        <a href="/files/resume.pdf" class="btn btn-sm btn-outline-primary"><i class="fas fa-download"></i> Get Resume</a>
     </div>
 </div>
 <div class="row projects">

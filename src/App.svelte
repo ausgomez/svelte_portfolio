@@ -3,6 +3,7 @@
 	import Hero from './components/Hero.svelte'
 	import Footer from './components/Footer.svelte'
 	import Projects from './components/Projects.svelte'
+	import Contact from './components/Contact.svelte'
 
 	let projectsSize = [0]
 </script>
@@ -13,6 +14,7 @@
 <div class="container-fluid main">
 	<Hero />
 	<Projects />
+	<Contact />
 </div>
 
 <footer>
