@@ -1,9 +1,13 @@
 <script>
-let visible = false;
+let first = false;
+let second = false;
+let third = false;
 
-    setTimeout(() => visible = true, 500);
+    setTimeout(() => first = true, 500);
+    setTimeout(() => second = true, 1200);
+    setTimeout(() => third = true, 1700);
 
-	function typewriter(node, { speed = 50 }) {
+	function typewriter(node, { speed = 30 }) {
 		const valid = (
 			node.childNodes.length === 1 &&
 			node.childNodes[0].nodeType === Node.TEXT_NODE
@@ -34,10 +38,17 @@ let visible = false;
         <div class="inner">
         
         <span class="heading">Welcome to my World</span>
-            {#if visible}
-            <h1 class="title"><span in:typewriter>Hi, I’m Aus Gomez</span><br>
+            
+            <h1 class="title">
+                {#if first}
+                <span in:typewriter>Hi, I’m Aus Gomez</span>
+                {/if}
+                <br>
+                {#if second}
                 <span class="second" in:typewriter> Software Developer.</span> 
+                {/if}
             </h1>
+            {#if third}
             <h2  in:typewriter>based in USA.</h2>
             {/if}
         </div>
