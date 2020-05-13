@@ -32,12 +32,12 @@ let third = false;
 
 <div class="row align-items-center">
     <div class="col-sm-12 col-lg-5  text-center">
-        <img width="394" height="394" class="hero-image rounded-circle" src="http://rainbowit.net/html/trydo/assets/images/about/designer-avatar.png" alt="">
+        <img width="394" height="394" class="hero-image rounded-circle" src="/aus.jpg" alt="">
     </div>
     <div class="col-sm-12 col-lg-7 mt_md--40 mt_sm--40">
         <div class="inner">
         
-        <span class="heading">Welcome to my World</span>
+        <span class="heading">Welcome to my Portfolio</span>
             
             <h1 class="title">
                 {#if first}
