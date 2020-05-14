@@ -168,13 +168,23 @@ let fourth = false;
     }
 
     @media only screen and (max-width: 991px){
+        div.row {
+            padding-top: 50px;
+        }
+
         div.inner{
-            margin-top: 100px;
+            margin-top: 50px;
             text-align: center;
         }
 
         div.links{
             text-align: center;
+        }
+
+        .hero-image{
+            max-height: 300px;
+            max-width: 300px;
+            margin-bottom: 10px;
         }
     }
 </style>
