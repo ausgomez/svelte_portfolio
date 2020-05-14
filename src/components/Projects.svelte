@@ -82,7 +82,7 @@ function setFilter(cat) {
     <div class="modal-content">
       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">
-            <i class="fas fa-times"></i>
+            <i class="fas fa-times fa-2x"></i>
           </span>
         </button>
         <div class="modal-body text-center">
@@ -97,7 +97,7 @@ function setFilter(cat) {
                   <div class="divider-custom-line"></div>
                 </div>
                 <!-- Portfolio Modal - Image -->
-                <img class="img-fluid rounded mb-5" style="max-width: 20em;" src="/projects/{singleProject.id}.png" alt="">
+                <img class="img-fluid rounded mb-5 modal-img" src="/projects/{singleProject.id}.png" alt="">
                 <!-- Technologies -->
                 <h6>Technologies used:</h6>
                 <h5>
@@ -164,4 +164,14 @@ function setFilter(cat) {
         text-decoration: none;
         color: black;
     }
+
+    .modal-img{
+      max-width: 20em;
+    }
+
+@media only screen and (max-width: 991px){
+    .modal-img{
+      max-width: 15em;
+    }
+}
 </style>
