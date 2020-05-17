@@ -2,7 +2,7 @@
 import { scale, slide } from 'svelte/transition';
 let projects = 
 [
-    { id: 'Web-3D-Maps', title: 'Web 3D Maps', desc: 'A web app to help people find their buildings around certain area. Like for example a university or city', latest: true, category: 'web', tags: ['vue', 'node', 'vuetify', 'mapbox'], source: '', live: ''},
+    { id: 'Web-3D-Maps', title: 'Web 3D Maps', desc: 'A web app to help people find their buildings around certain area. Like for example a university or city', latest: true, category: 'web', tags: ['vue', 'node', 'vuetify', 'mapbox'], source: '', live: 'https://mapboxvue.firebaseapp.com/'},
 
     { id: 'Habanero-App', title: 'Habanero App', desc: 'This is an open-source Flutter app that I developed to suggest food recipes based on the ingredients that the user already have', latest: true, category: 'mobile', tags: ['flutter', 'Android', 'ios', 'firebase'], source: 'https://github.com/Anstroy/recipe_app_flutter', live: ''},
 
