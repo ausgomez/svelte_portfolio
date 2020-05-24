@@ -2,6 +2,7 @@
 	import Navbar from './components/Navbar.svelte'
 	import Hero from './components/Hero.svelte'
 	import Footer from './components/Footer.svelte'
+	import Intro from './components/Intro.svelte'
 	import Projects from './components/Projects.svelte'
 	import Contact from './components/Contact.svelte'
 
@@ -14,6 +15,7 @@
 <div class="container-fluid main">
 	<Hero />
 	<Projects />
+	<Intro />
 	<Contact />
 </div>
 
