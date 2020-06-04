@@ -240,7 +240,7 @@
             <div class="thumbnail">
               <img
                 class="img-fluid"
-                src="/projects/{project.id}.png"
+                src="/projects/{project.id}.jpg"
                 alt={project.id}
                 width="auto"
                 height="200" />
