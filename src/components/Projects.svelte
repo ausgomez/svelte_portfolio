@@ -2,6 +2,17 @@
   import { scale, slide } from "svelte/transition";
   let projects = [
     {
+      id: "Office-Reservation",
+      title: "Office Reservation App",
+      desc:
+        "This web app is very similar to Airbnb, but it was made to reserve office spaces within a company. I made this project in collaboration with other web developers on github",
+      latest: true,
+      category: "web",
+      tags: ["vue", "node", "vuetify", "firebase"],
+      source: "https://github.com/Anstroy/office-reservation",
+      live: "https://github.com/Anstroy/office-reservation"
+    },
+    {
       id: "Instagram-Bot",
       title: "Instagram Bot",
       desc:
