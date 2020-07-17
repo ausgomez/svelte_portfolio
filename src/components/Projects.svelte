@@ -2,6 +2,17 @@
   import { scale, slide } from "svelte/transition";
   let projects = [
     {
+      id: "chalkbyte",
+      title: "School Microservices",
+      desc:
+        "Chalkbyte is a company that offers microservices for schools in Mexico to offer classes online, using Docker and NGINX with load balancing on the backend.",
+      latest: true,
+      category: "web",
+      tags: ["docker", "node", "nginx"],
+      source: "",
+      live: "https://chalkbyte.com"
+    },
+    {
       id: "Office-Reservation",
       title: "Office Reservation App",
       desc:
@@ -28,7 +39,7 @@
       title: "Web 3D Maps",
       desc:
         "A web app to help people find their buildings around certain area. Like for example a university or city",
-      latest: true,
+      latest: false,
       category: "web",
       tags: ["vue", "node", "vuetify", "mapbox"],
       source: "",
@@ -40,11 +51,11 @@
       title: "Habanero App",
       desc:
         "This is an open-source Flutter app that I developed to suggest food recipes based on the ingredients that the user already have",
-      latest: true,
+      latest: false,
       category: "mobile",
-      tags: ["flutter", "Android", "ios", "firebase"],
+      tags: ["flutter", "android", "ios", "firebase"],
       source: "https://github.com/Anstroy/recipe_app_flutter",
-      live: ""
+      live: "/files/habanero.apk"
     },
 
     {
@@ -52,7 +63,7 @@
       title: "Svelte Portfolio",
       desc:
         "A portolio template made with Svelte, this website exact website is the project",
-      latest: true,
+      latest: false,
       category: "web",
       tags: ["svelte", "bootstrap"],
       source: "https://github.com/Anstroy/svelte_portfolio",
@@ -189,7 +200,7 @@
       }}
       type="button"
       class="btn btn-lg btn-info">
-      All Projects
+      All
     </button>
     <button
       class:active={current === 1}
@@ -199,7 +210,7 @@
       }}
       type="button"
       class="btn btn-lg btn-info">
-      Web Dev
+      Web
     </button>
     <button
       class:active={current === 2}
@@ -209,7 +220,7 @@
       }}
       type="button"
       class="btn btn-lg btn-info">
-      Mobile Apps
+      Mobile
     </button>
     <button
       class:active={current === 3}

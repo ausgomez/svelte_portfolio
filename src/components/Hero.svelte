@@ -1,14 +1,51 @@
 <script>
   import { scale, slide } from "svelte/transition";
+  import { fly } from "svelte/transition";
+
   let first = false;
   let second = false;
   let third = false;
   let fourth = false;
+  let fifth = false;
 
   setTimeout(() => (first = true), 500);
   setTimeout(() => (second = true), 1200);
-  setTimeout(() => (third = true), 1700);
-  setTimeout(() => (fourth = true), 1900);
+  setTimeout(() => (third = true), 2200);
+  setTimeout(() => (fourth = true), 1700);
+
+  const workList = [
+    "coding remotely",
+    "are you reading this? 🤔",
+    "coding from 🏠",
+    "working around the 🌐",
+    "learning something cool",
+    "working hard 💪",
+    "coding on Github",
+    "I like Docker a lot! 🐋",
+    "watching movies right now 🍿",
+    "coding from anywhere",
+    "fixing some bugs on my code 😵",
+    "learning more JS 🤓",
+    "coding cool stuff",
+    "check out my projects 👇",
+    "wearing a 😷",
+    "doing some hackathons 🏆",
+    "let me = 'add you'",
+    "did I say that already?"
+  ];
+  let pickWork = 0;
+
+  setTimeout(() => loop(), 2000);
+  let loop = () =>
+    setTimeout(() => {
+      fifth = !fifth;
+      pickWork = 0;
+      let x = Math.floor(Math.random() * Math.floor(workList.length - 1));
+      while (x !== pickWork) {
+        pickWork = x;
+      }
+      loop();
+    }, 1600);
 
   function typewriter(node, { speed = 30 }) {
     const valid =
@@ -152,12 +189,17 @@
         {/if}
         <br />
         {#if second}
-          <span class="second" in:typewriter>Software Developer.</span>
+          <span class="second" in:typewriter>Software Developer</span>
         {/if}
       </h1>
-      {#if third}
-        <h2 in:typewriter>working remotely.</h2>
-      {/if}
+      <h2>
+        {#if fifth}
+          <span transition:typewriter>{workList[pickWork] + '.'}</span>
+        {/if}
+        {#if third}
+          <span>|</span>
+        {/if}
+      </h2>
     </div>
     <br />
     {#if fourth}
