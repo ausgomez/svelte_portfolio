@@ -326,7 +326,7 @@
               <!-- Portfolio Modal - Image -->
               <img
                 class="img-fluid rounded mb-5 modal-img"
-                src="/projects/{singleProject.id}.png"
+                src="/projects/{singleProject.id}.jpg"
                 alt="" />
               <!-- Technologies -->
               <h6>Technologies used:</h6>
