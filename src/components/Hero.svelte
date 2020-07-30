@@ -22,7 +22,6 @@
     "working hard 💪",
     "coding on Github",
     "I like Docker a lot! 🐋",
-    "watching movies right now 🍿",
     "coding from anywhere",
     "fixing some bugs on my code 😵",
     "learning more JS 🤓",
