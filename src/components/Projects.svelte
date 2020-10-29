@@ -2,15 +2,15 @@
   import { scale, slide } from "svelte/transition";
   let projects = [
     {
-      id: "chalkbyte",
-      title: "School Microservices",
+      id: "Countries-App",
+      title: "Vue + Appwrite",
       desc:
-        "Chalkbyte is a company that offers microservices for schools in Mexico to offer classes online, using Docker and NGINX with load balancing on the backend.",
+        "This small app, combines the power of Vue.js with Auth, CRUD operations, everything backed by Appwrite as a backend.",
       latest: true,
       category: "web",
-      tags: ["docker", "node", "nginx"],
-      source: "",
-      live: "https://chalkbyte.com"
+      tags: ["vue", "node", "appwrite", "tailwindcss"],
+      source: "https://github.com/Anstroy/countries-app",
+      live: "https://app-countries-vue.netlify.app/"
     },
     {
       id: "Office-Reservation",
@@ -28,7 +28,7 @@
       title: "Instagram Bot",
       desc:
         "Instragram bot that allows different things like uploading photos, fetching a list of photos from certain hashtags, etc",
-      latest: true,
+      latest: false,
       category: "other",
       tags: ["python", "selenium"],
       source: "https://github.com/Anstroy/instabot",
@@ -235,7 +235,10 @@
   </div>
   <br />
   <div class="btn-group resume" role="group" aria-label="Third group">
-    <a href="/files/resume.pdf" class="btn btn-sm btn-outline-primary">
+    <a
+      href="https://docs.google.com/document/d/1Axfpm_HCpW5CkPHxwwBUZcnAoZtRbl9q8l2D-YiSqcE/edit?usp=sharing"
+      target="_blank"
+      class="btn btn-sm btn-outline-primary">
       <i class="fas fa-download" />
       Get Resume
     </a>
