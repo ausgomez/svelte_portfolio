@@ -13,11 +13,22 @@
       live: "https://app-countries-vue.netlify.app/"
     },
     {
+      id: "Chalkbyte",
+      title: "Chalkbyte Schools",
+      desc:
+        "Chalkbyte is a company in Mexico that provides school online services at a low cost to combat COVID-19 lockdowns, I use Docker and NGINX to provide Moodle stacks to different schools.",
+      latest: true,
+      category: "web",
+      tags: ["docker", "nginx"],
+      source: "https://github.com/Anstroy/Chalkbyte",
+      live: "https://chalkbyte.herokuapp.com/"
+    },
+    {
       id: "Office-Reservation",
       title: "Office Reservation App",
       desc:
         "This web app is very similar to Airbnb, but it was made to reserve office spaces within a company. I made this project in collaboration with other web developers on GitHub for a Hackathon in Mexico",
-      latest: true,
+      latest: false,
       category: "web",
       tags: ["vue", "node", "vuetify", "firebase"],
       source: "https://github.com/Anstroy/office-reservation",
